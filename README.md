@@ -6,5 +6,7 @@ Hey, Guys, I hope you are looking for the advanced level for UITableView Animati
 
 
 
+![alt text](https://github.com/pushpendra996/table-view-magic/blob/main/UITableView.jpeg?raw=true)
 
-![alt text](https://github.com/pushpendra996/table-view-magic/blob/main/UITableViewMagic.gif?raw=true)
+
+![alt text](https://github.com/pushpendra996/table-view-magic/blob/main/UITableView.gif?raw=true)
