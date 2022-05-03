@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="DetailCell" customModule="Table_Magic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vap-e3-Wny">
+                        <rect key="frame" x="15" y="44" width="338" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="koi-ma-OO6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter The Details Of the Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH2-Po-qO1">
+                        <rect key="frame" x="15" y="10" width="338" height="26"/>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hH2-Po-qO1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="00m-bm-CU4"/>
+                    <constraint firstItem="vap-e3-Wny" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CHF-qb-S98"/>
+                    <constraint firstAttribute="trailing" secondItem="hH2-Po-qO1" secondAttribute="trailing" constant="15" id="I5e-sK-Mxq"/>
+                    <constraint firstAttribute="bottom" secondItem="vap-e3-Wny" secondAttribute="bottom" constant="15" id="QfM-bW-9G5"/>
+                    <constraint firstItem="vap-e3-Wny" firstAttribute="top" secondItem="hH2-Po-qO1" secondAttribute="bottom" constant="8" id="YI5-qX-FQz"/>
+                    <constraint firstAttribute="trailing" secondItem="vap-e3-Wny" secondAttribute="trailing" constant="15" id="aGz-NY-xCH"/>
+                    <constraint firstItem="hH2-Po-qO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xXY-Y9-PZx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tfDetails" destination="vap-e3-Wny" id="fXD-Ju-UwY"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="126.5625"/>
+        </tableViewCell>
+    </objects>
+</document>

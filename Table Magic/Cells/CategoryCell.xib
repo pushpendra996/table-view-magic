@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="CategoryCell" customModule="Table_Magic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-Le-mXB">
+                        <rect key="frame" x="15" y="8" width="327" height="87"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applewatch.watchface" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="50U-Wn-Auv">
+                                <rect key="frame" x="15" y="8" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VFU-BN-pV8"/>
+                                    <constraint firstAttribute="width" constant="50" id="gRo-DS-j9z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUe-55-JAp">
+                                <rect key="frame" x="75" y="13" width="237" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="50U-Wn-Auv" firstAttribute="leading" secondItem="ShI-Le-mXB" secondAttribute="leading" constant="15" id="R6x-Wz-k5e"/>
+                            <constraint firstAttribute="trailing" secondItem="YUe-55-JAp" secondAttribute="trailing" constant="15" id="WeW-Os-rSX"/>
+                            <constraint firstAttribute="bottom" secondItem="50U-Wn-Auv" secondAttribute="bottom" constant="8" id="dgg-tE-DCp"/>
+                            <constraint firstItem="50U-Wn-Auv" firstAttribute="top" secondItem="ShI-Le-mXB" secondAttribute="top" constant="8" id="hfx-gr-SUU"/>
+                            <constraint firstItem="YUe-55-JAp" firstAttribute="leading" secondItem="50U-Wn-Auv" secondAttribute="trailing" constant="10" id="iW8-Ju-6BI"/>
+                            <constraint firstItem="YUe-55-JAp" firstAttribute="centerY" secondItem="50U-Wn-Auv" secondAttribute="centerY" id="qpX-ff-mjD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ShI-Le-mXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Vs5-MR-JRH"/>
+                    <constraint firstAttribute="trailing" secondItem="ShI-Le-mXB" secondAttribute="trailing" constant="15" id="ffI-Oy-tMN"/>
+                    <constraint firstAttribute="bottom" secondItem="ShI-Le-mXB" secondAttribute="bottom" constant="8" id="syc-cT-ea6"/>
+                    <constraint firstItem="ShI-Le-mXB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uu2-W0-VKX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgIcon" destination="50U-Wn-Auv" id="WPF-O0-zsq"/>
+                <outlet property="lbTitle" destination="YUe-55-JAp" id="spe-8i-Nhf"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="applewatch.watchface" catalog="system" width="112" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
